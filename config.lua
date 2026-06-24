@@ -133,6 +133,6 @@ Config.Hints = {
 --                       DEBUG
 -- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-Config.Debug = true                  -- enable console logging
-Config.ShowFPSCounter = true         -- dev only
+Config.Debug = false                  -- enable console logging
+Config.ShowFPSCounter = false         -- dev only
 
