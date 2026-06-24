@@ -80,7 +80,6 @@ if Config.EnableTestCommand then
                     icon = isSheriffGrade3 and 'unlock' or 'lock',
                     disabled = not isSheriffGrade3,
                     disabledReason = not isSheriffGrade3 and ('Requires Sheriff grade 3\n(yours: ' .. (job or 'none') .. ' ' .. (grade or 0) .. ')') or nil,
-                   -- rarity = '',
                     description = 'Only accessible to Sheriff grade 3 or above.',
                     tags = isSheriffGrade3 and { 'Unlocked' } or { 'Requirement', 'Locked' },
                     onSelect = isSheriffGrade3 and function()
