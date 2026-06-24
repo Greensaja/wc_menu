@@ -1,0 +1,38 @@
+﻿/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+                    wc_menu animations
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+
+@keyframes wc-fade-in {
+    from { opacity: 0; transform: translate(-50%, -48%) scale(0.98); }
+    to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes wc-fade-out {
+    from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    to   { opacity: 0; transform: translate(-50%, -52%) scale(0.98); }
+}
+
+@keyframes wc-hints-fade-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+#wc-root.opening  { animation: wc-fade-in  0.18s ease-out forwards; }
+#wc-root.closing  { animation: wc-fade-out 0.14s ease-in forwards; }
+#wc-hints.showing { animation: wc-hints-fade-in 0.22s ease-out forwards; }
+
+/* item selection bump */
+@keyframes wc-select-bump {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.015); }
+    100% { transform: scale(1); }
+}
+.wc-item.bump { animation: wc-select-bump 0.18s ease-out; }
+
+/* value flash for sliders/quantities on change */
+@keyframes wc-value-flash {
+    0%   { color: var(--wc-accent); }
+    100% { color: var(--wc-bone); }
+}
+.wc-flash { animation: wc-value-flash 0.3s ease-out; }
+
