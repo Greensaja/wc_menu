@@ -10,7 +10,7 @@ Config = {}
 --                       BEHAVIOR
 -- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 -- Register /wcmenutest. Keep false on production servers unless testing this resource.
-Config.EnableTestCommand = true
+Config.EnableTestCommand = false
 
 -- Pause game when a menu is open (RDR2 native pause)
 Config.PauseGame = false
